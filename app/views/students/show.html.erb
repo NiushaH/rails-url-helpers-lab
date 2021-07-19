@@ -1,1 +1,8 @@
 <h1><%= @student.to_s %></h1>
+
+<%# embed the active page here -- renders whether or not logged in %>
+<% if @student.active %>
+  This student is currently active.
+<% else %>
+  This student is currently inactive.
+<% end %>

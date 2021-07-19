@@ -1,0 +1,13 @@
+
+<%# refactor with URL Helper to show active or inactive status %>
+<%# <%= link_to_if(@student.active?==false, "This student is currently inactive.", { controller: "students", action: "active" }) %> %>
+
+<%# # line 3 to accomplish the following: %>
+<% if @student.active %>
+  This student is currently active.
+<% else %>
+  This student is currently inactive.
+<% end %>
+
+<%# redirect to show page %>
+
